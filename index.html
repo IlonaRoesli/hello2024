@@ -10,6 +10,14 @@
         font-family: 'Martel', sans-serif;
         background-color: #0050F5;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        /* Ensure the body takes the full height of the viewport */
+        margin: 0;
+        /* Remove default margin */
       }
 
       h2 {
@@ -20,6 +28,7 @@
       h6 {
         font-weight: bold;
         font-size: 16px;
+        text-align: center;
       }
 
       @media only screen and (max-width: 600px) {
@@ -34,18 +43,20 @@
 
       button {
         padding: 10px 20px;
-      font-size: 16px;
-      background-color: #F8F8F8;
-      color: #0050F5;
-      border: none;
-      cursor: url('https://i.ibb.co/x5fcBbK/test1.png'), pointer;
-      border-radius: 10px; 
-      font-family: 'Anonymous Pro', sans-serif;
+        font-size: 16px;
+        background-color: #F8F8F8;
+        color: #0050F5;
+        border: none;
+        cursor: url('https://i.ibb.co/x5fcBbK/test1.png'), pointer;
+        border-radius: 10px;
+        font-family: 'Anonymous Pro', sans-serif;
+        margin-top: 10px;
       }
 
       #randomText {
         font-size: 14px;
         margin-top: 10px;
+        text-align: center;
       }
 
     </style>
