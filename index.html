@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <title>Dag mooi mens</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    h2 {
-      font-family: 'Comic Sans MS', sans-serif;
-      font-style: bold;
-      font-size: 24px;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dag mooi mens</title>
+    <style>
+      body {
+        font-family: 'Martel', sans-serif;
+        background-color: #0050F5;
+        color: white;
+      }
 
-    h6 {
-      font-family: 'Helvetica Neue', sans-serif;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    @media only screen and (max-width: 600px) {
       h2 {
-        font-size: 18px;
+        font-style: bold;
+        font-size: 24px;
       }
 
       h6 {
-        font-size: 14px;
+        font-weight: bold;
+        font-size: 16px;
       }
-    }
 
-    button {
-      padding: 10px 20px;
+      @media only screen and (max-width: 600px) {
+        h2 {
+          font-size: 18px;
+        }
+
+        h6 {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        padding: 10px 20px;
       font-size: 16px;
-    }
+      background-color: #F8F8F8;
+      color: #0050F5;
+      border: none;
+      cursor: url('https://i.ibb.co/x5fcBbK/test1.png'), pointer;
+      border-radius: 10px; 
+      font-family: 'Anonymous Pro', sans-serif;
+      }
 
-    #randomText {
-      font-size: 14px;
-      margin-top: 10px;
-    }
-  </style>
-</head>
+      #randomText {
+        font-size: 14px;
+        margin-top: 10px;
+      }
 
-<body>
-  <h2>Dag, mooi mens</h2>
-  <h6>Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
-    en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
+    </style>
+  </head>
 
-  <button onclick="generateRandomText()">Geneer een knus bericht</button>
-  <p id="randomText" class="text-style"></p>
+  <body>
+    <h2>Dag, mooi mens</h2>
+    <h6 id="dynamicText">Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
+      en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
 
-  <script>
-    // Array of texts to be shuffled
-    var texts = [
-      "even afstand bezinnen herbronnen plannen hahaha en nu slapen dankje voor de avond trip door het crushlandschap - i.",
+    <button onclick="generateRandomText()">Geneer een knus bericht</button>
+    <p id="randomText" class="text-style"></p>
+
+    <script>
+      // Array of texts to be shuffled
+      var texts = [
+        "even afstand bezinnen herbronnen plannen hahaha en nu slapen dankje voor de avond trip door het crushlandschap - i.",
         "kettles balsamic vinegar / die chips neutrale smaak met het opatje / linzenchipjes / sensations met de cream maar eigenlijk kan je nooit fout gaan met chips behalve misschien geribbelde zout en peper - n.",
         "Dr martens, onderbroeken, shampo van de lush. Een pen voor een iPad... en om af te sluiten... Bubble tea - n.",
         "wandelen dansen koken zwemmen drijven lezen eten mediteren zingen klaarkomen heel hard rennen huilen dichtbij zijn ! - n.",
@@ -98,32 +110,41 @@
         "It's supposed to be a democracy haha - j.",
         "I didn't expect to see that much vulva - j.",
         "high fives voor mezelf en dank voor de kanscreaties+duidelijker laten merken dat ik interesse heb aanmoediging - i.",
-    ];
 
-    function generateRandomText() {
-      // Get a random index from the array
-      var randomIndex = Math.floor(Math.random() * texts.length);
+      ];
 
-      // Display the random text in the paragraph
-      var r
+      function generateRandomText() {
+        // Get a random index from the array
+        var randomIndex = Math.floor(Math.random() * texts.length);
+
+        // Display the random text in both the h6 and p elements
+        var randomText = texts[randomIndex];
+        document.getElementById("dynamicText").textContent = randomText;
+        document.getElementById("randomText").textContent = ""; // Clear the text content
+      }
+
+    </script>
+  </body>
+
+</html>
 
 
-<!-- 
-combinatie van 4 lettertypen om te gebruiken:
-body {
-    font-family: 'Lato', sans-serif;
-}
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-}
+<!--
+        combinatie van 4 lettertypen om te gebruiken:
+          body {
+            font - family: 'Lato', sans - serif;
+          }
 
-h3, p {
-    font-family: 'Montserrat', sans-serif;
-}
+        h1, h2 {
+          font - family: 'Playfair Display', serif;
+        }
 
-.custom-heading {
-    font-family: 'Dancing Script', cursive;
-}
--->
+        h3, p {
+          font - family: 'Montserrat', sans - serif;
+        }
 
+        .custom - heading {
+            font - family: 'Dancing Script', cursive;
+          }
+          -->
