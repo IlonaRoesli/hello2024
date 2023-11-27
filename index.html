@@ -1,97 +1,65 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Dag mooi mens</title>
-    <style>
-      h2
-        {
-        font-family: 'Comic Sans MS', sans-serif;
-        font-style: bold;
-        }
-        h6
-        {
-        font-family: 'Helvetica Neue', sans-serif;
-        font-weight: bold;
+<head>
+  <title>Dag mooi mens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h2 {
+      font-family: 'Comic Sans MS', sans-serif;
+      font-style: bold;
+      font-size: 24px;
+    }
+
+    h6 {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 18px;
       }
 
-    </style>
-  </head>
-
-  <body>
-    <h2>Dag, mooi mens</h2>
-        <h6>Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
-
-    <button onclick="generateRandomText()">Geneer een knus bericht</button>
-    <p id="randomText" class="text-style"></p>
-
-    <script>
-      // Array of texts to be shuffled
-      var texts = [
-        "even afstand bezinnen herbronnen plannen hahaha en nu slapen dankje voor de avond trip door het crushlandschap - i.",
-        "kettles balsamic vinegar / die chips neutrale smaak met het opatje / linzenchipjes / sensations met de cream maar eigenlijk kan je nooit fout gaan met chips behalve misschien geribbelde zout en peper - n.",
-        "Dr martens, onderbroeken, shampo van de lush. Een pen voor een iPad... en om af te sluiten... Bubble tea - n.",
-        "wandelen dansen koken zwemmen drijven lezen eten mediteren zingen klaarkomen heel hard rennen huilen dichtbij zijn ! - n.",
-        "hoe ver rijden naar het midden van nergens - n.",
-        "Had gezegd dat een jongen niet zo louche moest doen. Toen werd ie boos. Maar hij was letterlijk drugs aan het dealen. - n.",
-        "see you at the other side my friend - n.",
-        "Vroem vroem - m.",
-        "Hey! Ik was je vergeten zeggen maar er was nog pizza voor je in frigo mocht je willen (oeps, wat laat!) - m.",
-        "Ik rook nog snel een compulsieve sigaret maar ben er wel! - c.",
-        "Goedemorgen en helluuuuw - c.",
-        "Bisous de lyon xx - l.",
-        "Ikea ontbijt. Ben je in de ikea? Ik volg biet van Mediamarkt naar ikea / Ja de Mediamarkt en de IKEA zijn naast elkaar in Wilrijk / Das een heftige ochtend Ilona - l.",
-        "en het spel, de schoonheid is ook veel waard, toch? - i.",
-        "je zal het merken aan het voice bericht van Charly, maar jij zocht een Venn diagram voor 5 online? Ik heb er een gevonden: - j.",
-        "Helo roeszaddy - j.",
-        "Do you wanna do a poly bookclub - j.",
-        "Lol I have started crying in front ppl recently - j.",
-        "isims - j.",
-        "sleep deprived and barely alive - l. & i.",
-        "Zal ik je straks komen ophalen? - j.",
-        "Bbbb mag ik 2 cigs lenen? - j.",
-        "Ik ben indoor-activiteiten aan het verzinnen - e.",
-        "En ja, het leven zit vol weirde contrasten. - e.",
-        "Ilona, waar komt die kalender met naakten in taal ook alweer vandaan? - e.",
-        "Link in bio? Waar is bio? - i.",
-        "vrienden worden op co-star? ik vind je niet - i.",
-        "of kom jij ons verblijden met je tips(y zelf)? - i.",
-        "ik wil jullie nog graag zien voor ik vertrek - l.",
-        "Meanwhile my friends and acquaintances are having kids and preparing exhibitions and defending doctoral dissertations and moving to the US for jobs - c.",
-        "Wat een weelde - j.",
-        "oh urgh, begrijpelijk eerder wijsheid die met de leeftijd komt dan, of een soort zelfrespect dat je daar niet zo'n zin in hebt / ik wens je toe dat het gwn fijn mag zijn zonder gedoe / je bent in elk geval een fantastisch persoon - i.",
-        "#besteteam #zoveelliefde - i.",
-        "brussel-berlijn-buenos aires? i.",
-        "Good / You? / Still super queer i hope - l.",
-        "Witte wijn? - l.",
-        "1 min / 35 seconden / Simkaart zat in andere gsm / Lol - n.",
-        "wat een goede invloed heb jij (op mij, de circulaire economie, de lokale wijnverkoop, de gesprekskwaliteit)! ik ben graag in je gezelschap xx hoop dat je een goeie gul(l)(zig)e zondag had - n.",
-        "(doet me ook denken aan een zin die ik onlangs las: toeval is een lotsbestemming geschreven in onzichtbare inkt) - n.",
-        "all for orchestrated randomness! - n.",
-        "Haha je afwassituatie is ook zeer herkenbaar - c.",
-        "Maar cool zijn is overrated en alleen zijn is vaak wel helemaal pret so just follow your bliss, as the millenial instagram moms say - c.",
-        "Beautiful productive human - c.",
-        "Heb je even depannering nodig? - m.",
-        "Dikke dikke knuffel ! - m.",
-        "It's supposed to be a democracy haha - j.",
-        "I didn't expect to see that much vulva - j.",
-        "high fives voor mezelf en dank voor de kanscreaties+duidelijker laten merken dat ik interesse heb aanmoediging - i.",
-      ];
-
-
-      function generateRandomText() {
-        // Get a random index from the array
-        var randomIndex = Math.floor(Math.random() * texts.length);
-
-        // Display the random text in the paragraph
-        var randomText = texts[randomIndex];
-        document.getElementById("randomText").textContent = randomText;
+      h6 {
+        font-size: 14px;
       }
+    }
 
-    </script>
-  </body>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
 
-</html>
+    #randomText {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Dag, mooi mens</h2>
+  <h6>Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
+    en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
+
+  <button onclick="generateRandomText()">Geneer een knus bericht</button>
+  <p id="randomText" class="text-style"></p>
+
+  <script>
+    // Array of texts to be shuffled
+    var texts = [
+      // ... (unchanged)
+    ];
+
+    function generateRandomText() {
+      // Get a random index from the array
+      var randomIndex = Math.floor(Math.random() * texts.length);
+
+      // Display the random text in the paragraph
+      var r
+
 
 <!-- 
 combinatie van 4 lettertypen om te gebruiken:
@@ -111,3 +79,4 @@ h3, p {
     font-family: 'Dancing Script', cursive;
 }
 -->
+
