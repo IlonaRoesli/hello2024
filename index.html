@@ -68,11 +68,11 @@
 
   <body>
     <h2>DAG, MOOI MENS</h2>
+    <p id="randomText" class="text-style"></p>
     <h6 id="dynamicText">Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
       en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
 
     <button onclick="generateRandomText()">Geneer een knus bericht</button>
-    <p id="randomText" class="text-style"></p>
 
     <script>
       // Array of texts to be shuffled
@@ -191,6 +191,27 @@
         "Had gezegd dat een jongen niet zo louche moest doen. Toen werd ie boos. Maar hij was letterlijk drugs aan het dealen. - n.",
         "see you at the other side my friend - n.",
         "1 min / 35 seconden / Simkaart zat in andere gsm / Lol - n.",
+        "Lang leve isolatie & boeken - n.",
+        "Gelukkig is er the voice kids & pasta met kaassaus - n.",
+        "Halfuurtje gamen? Ik wil zo een kaart kopen - n.",
+        "Maar als je bubble tea wilt vandaag / Holler - n.",
+        "Tv naar slaapkamer verhuisd / The upgrade der upgrades - n.",
+        "Darling, come home please!!!! / Dat we kunnen dansen - n.",
+        "Aaah power to the ilona!!!!! Vey good very good - n.",
+        "Ik heb zonet aan LOTR toegegeven voor het eerst in mijn leven en ik denk dat het goed is om je gedachten te verzetten. Tegen ziekte, liefdesverdriet, kortom - alle bad vibes - n.",
+        "Dus nuoc mammi he - n.",
+        "spoiler: ik kreeg op date 2 een thais mes als kado - n.",
+        "Verkeerslicht killing me softly - n.",
+        "Ik vertrek zo had ff een wc ontstop situatie - n.",
+        "Broedertjen wat doe je vandaag? - n.",
+        "Mijn naam voor werkloos is JOBVRIJ - n.",
+        "En ik ben trots op je. Wandelen in de winter, ik weet het niet - n.",
+        "Merci voor je lieve berichten - n.",
+        "Ik kom eraan!!! Sorry voor de chaos - n.",
+        "Haaa bro ik ga finally the bubble bar proberen - n.",
+        "Faking hagel haha ik ben er al zo - n.",
+        "Ik heb een deadline vanavond en wilde die af hebben voor 17u maar heb eig gwn gewacht om te kunnen vertrekken naar dumpling paradiiiiise - n.",
+        "YOOOO - n.",
 
         "Vroem vroem - m.",
         "Hey! Ik was je vergeten zeggen maar er was nog pizza voor je in frigo mocht je willen (oeps, wat laat!) - m.",
@@ -238,18 +259,20 @@
         "Fuck that pigeon lol - j.",
         "Lol 😂 imma google “crush friend colleague situation” later - j.",
         "We can have a cry sesh lol - j.",
-        
         "Also your profile pic is how I feel - j.",
         "yeah distraction happens - j.",
         
 
-        
-
-        
-
-        
         "Zal ik je straks komen ophalen? - j.",
         "Bbbb mag ik 2 cigs lenen? - j.",
+        "HOLAAAA / Niets geslapen en nu aan mijn gate - j.",
+        "You? Ready to have me over? - j.",
+        "Oef / Goeiemooooooorgend / Zeggen we dan - j.",
+        "Heb een vraagje, die filmrolletjes bewaar jij in de koelkast he? - j.",
+        "You're a walking contradiction. I love that. - j.",
+        "Okay cool cool cool - j.",
+        "Depressing & informative - j.",
+        "Bb hoe noemt die planet game van jou? - j.",
         
         "Ik ben indoor-activiteiten aan het verzinnen - e.",
         "En ja, het leven zit vol weirde contrasten. - e.",
@@ -265,9 +288,9 @@
         var randomIndex = Math.floor(Math.random() * texts.length);
 
         // Display the random text in both the h6 and p elements
-        var randomText = texts[randomIndex];
-        document.getElementById("dynamicText").textContent = randomText;
-        document.getElementById("randomText").textContent = ""; // Clear the text content
+         var randomText = texts[randomIndex];
+        document.getElementById("dynamicText").textContent = "";
+        document.getElementById("randomText").innerHTML = randomText; // Clear the text content
       }
 
     </script>
