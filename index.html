@@ -78,7 +78,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     height: 100vh;
     margin: 0;
@@ -89,24 +89,24 @@
     font-family: 'Anonymous Pro', monospace;
     font-weight: 1000;
     letter-spacing: 10px;
-    font-style: normal;
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    text-align: left; /* Align text to the right */
+    margin-right: -500px;
   }
 
   h3 {
-    font-weight: italic;
-    font-size: 16px;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 14px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: -50px;
     max-width: 80%;
   }
 
   #randomText {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     max-width: 80%;
-    margin-top: 10px;
+    margin-top: -50px;
   }
 
   button {
@@ -118,7 +118,7 @@
     cursor: url('https://i.ibb.co/x5fcBbK/test1.png'), pointer;
     border-radius: 10px;
     font-family: 'Anonymous Pro', sans-serif;
-    margin-top: 10px;
+    margin-top: 200px;
   }
 }
 
@@ -129,7 +129,7 @@
 
   <body>
     <h1>Dag,<br>mooi mens</h1>
-    <h3 id="dynamicText">LOOOOORDDDDDD SAVE ME Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
+    <h3 id="dynamicText">AGAIN AND AGAIN AND AGAIN Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
       en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h3>
     <p id="randomText" class="text-style"></p>
     <button onclick="generateRandomText()">Geneer een vibe</button>
