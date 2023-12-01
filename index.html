@@ -7,7 +7,7 @@
     <title>Dag mooi mens</title>
     <style>
       body {
-        font-family: 'Anonymous Pro', serif;
+        font-family: 'Anonymous Pro', sans-serif;
         font-style: bold;
         background-color: #0050F5;
         color: white;
@@ -21,64 +21,80 @@
         /* Remove default margin */
       }
 
-      h2 {
-        font-size: 24px;
+      h1 {
+        font-size: 30px;
         font-family: 'Martel', monospace;
-        font-weight: 1000;
+        font-weight: 2000;
         letter-spacing: 10px;
-        font-style: bold;
-        margin-top: 0;
+        font-style: normal;
+        margin: 100;
+        text-align: left;
+        top: 0;
+        left: 5;
+        position: absolute;
+
       }
 
-      h6 {
+      h3 {
+        font-family: 'Martel', monospace;
         font-weight: italic;
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
-        margin-top: 60px;
+        margin-top: -10px;
+        position: absolute;
+
       }
+
 
       @media only screen and (max-width: 600px) {
         h2 {
           font-size: 18px;
         }
 
-        h6 {
+        h3 {
           font-size: 14px;
         }
       }
 
       #randomText {
-        font-size: 18px;
-        margin-top: 0px;
+        font-family: 'Martel', monospace;
+        font-weight: italic;
+        font-size: 15px;
         text-align: center;
+        margin-top: -20px;
+        position: absolute;
+        max-width: 300px; 
       }
+
       button {
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 12px;
         background-color: #F8F8F8;
         color: #0050F5;
         border: none;
         cursor: url('https://i.ibb.co/x5fcBbK/test1.png'), pointer;
         border-radius: 10px;
         font-family: 'Anonymous Pro', sans-serif;
-        margin-top: 0px;
-      }
+        margin-top: 200px;
+        position: absolute;
 
+      }
 
     </style>
   </head>
 
+
   <body>
-    <h2>DAG, MOOI MENS</h2>
-    <h6 id="dynamicText">Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
-      en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h6>
+    <h1>Dag,<br>mooi mens</h1>
+    <h3 id="dynamicText">Deze is voor alle liefhebbers van spel en taal, voor boomie, baes, charly, swieber, bambi, nini, voor mijn mede-strijders
+      en -activisten, voor alle mensen die hun huis openstelden voor weekendjes weg, soirees en bordspellen </h3>
     <p id="randomText" class="text-style"></p>
     <button onclick="generateRandomText()">Geneer een knus bericht</button>
 
     <script>
       // Array of texts to be shuffled
       var texts = [
-         "Vriendin! Levens update over een drankje? - a.",
+        "Vriendin! Levens update over een drankje? - a.",
         "Girl wat doe je allemaal - a.",
         "Eindelijk mijn voorlopig rijbewijs gaan ophalen! Danku stad Antwerpen - a.",
         "Huis is een tragedie maar een sprookje - a.",
@@ -184,7 +200,7 @@
         "kettles balsamic vinegar / die chips neutrale smaak met het opatje / linzenchipjes / sensations met de cream maar eigenlijk kan je nooit fout gaan met chips behalve misschien geribbelde zout en peper - n.",
         "wandelen dansen koken zwemmen drijven lezen eten mediteren zingen klaarkomen heel hard rennen huilen dichtbij zijn ! - n.",
         "hoe ver rijden naar het midden van nergens - n.",
-        "wat een goede invloed heb jij (op mij, de circulaire economie, de lokale wijnverkoop, de gesprekskwaliteit)! ik ben graag in je gezelschap xx hoop dat je een goeie gul(l)(zig)e zondag had - n.",
+        "wat een goede invloed heb jij (op mij, de circulaire economie, de lokale wijnverkoop, de gesprekskwaliteit)! ik ben graag in je gezelschap xx - n.",
         "all for orchestrated randomness! - n.",
         "(doet me ook denken aan een zin die ik onlangs las: toeval is een lotsbestemming geschreven in onzichtbare inkt) - n.",
         "hello you, creature of the night, liver of the life, scanner of the limbs, surfer on the waves, poet of the autocorrect: hoe gaat het - n.",
@@ -236,7 +252,7 @@
         "Heb je even depannering nodig? - m.",
         "Dikke dikke knuffel ! - m.",
         "Ik kan echt niet gent Brussel Leuven doen EN drie vormen van protest haha - m.",
-        "onder het mom: Schrijven, wiki hackathon, bi-visibility, anderen leren kennen in the scene, uitstapje amsterdam? :D - m.",
+        "onder het mom: Schrijven, wiki hackathon, bi-visibility, anderen leren kennen in the scene, uitstapje amsterdam? - m.",
         "#teamzelfzorg - m.",
         "Merci voor fijne tijd & for showing up as always - m.",
         "Goede betoging gewenst en mss tot straks? ;-) - m.",
@@ -244,17 +260,17 @@
         "Ps: totaal vergeten zeggen maar absoluut de beste dag van het jaar : zondag is het autoloze zondag !!!! - m.",
         "En die frietjes waren er echt officieel te veel haha - m.",
         "Wat fijn om de dag te beginnen met koffieklatsj met jou ! - m.",
-        "Had jij toevallig een hoofdkussen mee dat je vergeten bent ? Of hebben wij er plots eentje extra waar ik geen weet van had? 🤔🫣😁 - m.",
+        "Had jij toevallig een hoofdkussen mee dat je vergeten bent ? Of hebben wij er plots eentje extra waar ik geen weet van had? - m.",
         "En helemaal ja voor Ilona in Brussel ! - m.",
         "Hey! Wat van de spontane aanpak maar ik ben deze namiddag in antwerpen - m.",
         "En helemaal ja voor Ilona in Brussel ! - m.",
         "Als je wil kunnen we dag starten met koffietje voor of samen lunchen na je bezoek :-) - m.",
-        "Voor zowel het verdriet als de fijne momenten ben je heel welkom 🤗 - m.",
-        "Haha ik was niet zeker dus wilde bijna niet sturen (want no Shame in niet werken!!) maar oef blij dat ik dan toch gestuurd heb ;-) - m.",
-        "Ik zou het niet sturen als ik niet denk dat je kans zou maken ;-) - m.",
-        "Maar goed om even op jezelf te concentreren en kijken wat er al dan niet komt ;-) - m.",
-        "De universe denkt daar duidelijk anders over ;-) haha 😂 ik vind het stiekem wel heel grappig 😹 mss toch eens de horoscoop van vandaag opzoeken… als die bevestigd dan weet je hoelaat het is ;-) m.",
-        "En daardoor ook dit dat ik met jou graag deel in onze zoektocht naar queer plaatsen / Met jawel: een queer velo reparatie haha 😛 - m.",
+        "Voor zowel het verdriet als de fijne momenten ben je heel welkom - m.",
+        "Haha ik was niet zeker dus wilde bijna niet sturen (want no Shame in niet werken!!) maar oef blij dat ik dan toch gestuurd heb - m.",
+        "Ik zou het niet sturen als ik niet denk dat je kans zou maken - m.",
+        "Maar goed om even op jezelf te concentreren en kijken wat er al dan niet komt - m.",
+        "De universe denkt daar duidelijk anders over - m.",
+        "En daardoor ook dit dat ik met jou graag deel in onze zoektocht naar queer plaatsen / Met jawel: een queer velo reparatie haha - m.",
         "Is het gelukt met je kortverhaal? :-) / (Late afterthought ;-)) - m.",
         "JOEPIEEE - m.",
         "meest gegroeide vriendschap in de voorbije jaren - m.",
@@ -273,11 +289,10 @@
         "I love how your mind works - j.",
         "The couch is free so im gonna sit for a while - j.",
         "Fuck that pigeon lol - j.",
-        "Lol 😂 imma google “crush friend colleague situation” later - j.",
+        "Lol imma google “crush friend colleague situation” later - j.",
         "We can have a cry sesh lol - j.",
         "Also your profile pic is how I feel - j.",
         "yeah distraction happens - j.",
-
         "Zal ik je straks komen ophalen? - j.",
         "Bbbb mag ik 2 cigs lenen? - j.",
         "HOLAAAA - j.",
@@ -293,7 +308,7 @@
         "You've worked on it, you have the expertise, they should listen to you - j.",
         "Oeh sexy - j.",
         "Ik FaceTime je zo - j.",
-        "We love butt pics, j.",
+        "We love butt pics, - j.",
         "Me on a conference: oh ja ik zie jullie dan op dit protest binnen 2 weken doei - j.",
         "Mag weg babes. Ik krijg kotsneigingen van ernaar te kijken - j.",
         "Wat is een vibe babes? - j.",
@@ -308,7 +323,7 @@
         "Ilona, waar komt die kalender met naakten in taal ook alweer vandaan? - e.",
         "Bij de NOS versprak gisteren iemand zich en zei: 'De stellen zijn getemd.' in plaats van: 'De stemmen zijn geteld.' Toen veerde ik even op van hoop. Oh, de stellen zijn getemd. En de stemmen, die moeten nog geteld worden. - e.",
         "Gisteren was echt een rotdag voor Frans Timmermans - e.",
-        "En vooral niet te veel plannen. 😃 Ons kennende. - e.",
+        "En vooral niet te veel plannen. Ons kennende. - e.",
       ];
 
       function generateRandomText() {
