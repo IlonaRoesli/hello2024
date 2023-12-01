@@ -47,17 +47,6 @@
 
       }
 
-
-      @media only screen and (max-width: 600px) {
-        h2 {
-          font-size: 18px;
-        }
-
-        h3 {
-          font-size: 14px;
-        }
-      }
-
       #randomText {
         font-family: 'Martel', monospace;
         font-weight: italic;
@@ -79,8 +68,37 @@
         font-family: 'Anonymous Pro', sans-serif;
         margin-top: 200px;
         position: absolute;
-
       }
+      /* Mobile-only styles */
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: stretch;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  #randomText {
+    font-size: 14px;
+    max-width: 250px;
+    margin-top: -15px;
+  }
+
+  button {
+    padding: 15px 25px;
+    font-size: 14px;
+    margin-top: 20px;
+    position: static;
+    margin: 0;
+  }
 
     </style>
   </head>
