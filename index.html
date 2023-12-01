@@ -16,9 +16,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        /* Ensure the body takes the full height of the viewport */
         margin: 0;
-        /* Remove default margin */
       }
 
       h2 {
@@ -327,32 +325,10 @@
 
         // Display the random text in both the h6 and p elements
         var randomText = texts[randomIndex];
-        document.getElementById("dynamicText").textContent = "";
+        document.getElementById("dynamicText").textContent = randomText;
         document.getElementById("randomText").innerHTML = randomText; // Clear the text content
       }
 
     </script>
   </body>
-
 </html>
-
-
-
-<!--
-        combinatie van 4 lettertypen om te gebruiken:
-          body {
-            font - family: 'Lato', sans - serif;
-          }
-
-        h1, h2 {
-          font - family: 'Playfair Display', serif;
-        }
-
-        h3, p {
-          font - family: 'Montserrat', sans - serif;
-        }
-
-        .custom - heading {
-            font - family: 'Dancing Script', cursive;
-          }
-          -->
